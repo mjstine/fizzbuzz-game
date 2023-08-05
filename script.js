@@ -52,3 +52,9 @@ function startFizzBuzz(userInput) {
 
     return arrFizzBuzz;
 }
+
+function startGame(){
+    return startFizzBuzz(getUserInput());
+}
+
+console.log(startGame());
