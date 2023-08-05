@@ -29,3 +29,26 @@ function validateUserInput(userInput){
 
     return true;
 }
+
+function startFizzBuzz(userInput) {
+    let arrFizzBuzz = [];
+    for(let i = 1; i <= userInput; i++){
+        
+        if(i % 3 === 0 && i % 5 !== 0){
+            arrFizzBuzz.push('Fizz');
+            continue;
+        }
+        if(i % 5 === 0 && i % 3 !== 0){
+            arrFizzBuzz.push('Buzz');
+            continue;
+        }
+        if(i % 3 === 0 && i % 5 === 0){
+            arrFizzBuzz.push('FizzBuzz');
+            continue;
+        }
+
+        arrFizzBuzz.push(i);
+    }
+
+    return arrFizzBuzz;
+}
