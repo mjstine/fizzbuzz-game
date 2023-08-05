@@ -15,3 +15,17 @@ function getUserInput(){
     }
 
 }
+
+function validateUserInput(userInput){
+    if(isNaN(userInput)){
+        alert('Please enter a number only. Letters and special characters are not allowed.');
+        return getUserInput();
+    }
+
+    if(userInput <= 0){
+        alert('Please enter a number from one and above.');
+        return getUserInput();
+    }
+
+    return true;
+}
